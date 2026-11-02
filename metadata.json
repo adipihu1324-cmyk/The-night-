@@ -1,0 +1,6 @@
+{
+  "name": "THE LAST NIGHT - 3D Horror Survival",
+  "description": "A premium first-person psychological 3D horror survival game. Explore the abandoned Saint Jude Sanatorium, solve puzzles, manage your flashlight, and survive the creature.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

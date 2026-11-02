@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-horror: 'Cinzel', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-title: 'Creepster', cursive;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #030305;
+    color: #e2e8f0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Horror Utilities */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-creepster {
+  font-family: 'Creepster', cursive;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Screen CRT / Horror Vignette */
+.horror-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(3, 3, 5, 0.75) 85%, rgba(0, 0, 0, 0.95) 100%);
+  pointer-events: none;
+}
+
+.horror-panic-vignette {
+  background: radial-gradient(circle at center, transparent 30%, rgba(139, 0, 0, 0.45) 75%, rgba(40, 0, 0, 0.95) 100%);
+  pointer-events: none;
+}
+
+/* Scanlines */
+.scanlines {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Noise overlay */
+.noise-overlay {
+  background-image: repeating-radial-gradient(#000 0 0.0001%, #fff 0 0.0002%);
+  background-size: 140px 140px;
+  opacity: 0.035;
+  pointer-events: none;
+}
+
+/* Glitch text effect */
+.glitch-text {
+  text-shadow: 2px 0 #991b1b, -2px 0 #1e3a8a;
+}
